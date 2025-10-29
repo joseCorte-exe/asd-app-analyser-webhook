@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "asd-app-analysis",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-10-26",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "asd-app-db",
+      "database_id": "5ecf9894-5201-461c-95a4-254a701ed5b1"
+    }
+  ],
+  "r2_buckets": [
+    {
+      "binding": "R2",
+      "bucket_name": "asd-app-bucket",
+      "preview_bucket_name": "asd-app-bucket"
+    }
+  ],
+  "observability": {
+    "logs": {
+      "enabled": true,
+      "head_sampling_rate": 1,
+      "invocation_logs": true,
+      "persist": true
+    }
+  }
+}
